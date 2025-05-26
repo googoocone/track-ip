@@ -6,40 +6,13 @@
 
 export default function HomePage() {
   return (
-    <main style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <div style={{ marginTop: "30px" }}>
-        <h2>페이지 이동 테스트</h2>
-        <ul>
-          <li>
-            <a href="/about">About 페이지로 이동</a>
-          </li>
-          <li>
-            <a href="/dashboard">Dashboard 페이지로 이동</a>
-          </li>
-        </ul>
-      </div>
-
-      <div style={{ marginTop: "30px" }}>
-        <h2>클릭 이벤트 테스트</h2>
-        <button
-          id="test-button-1"
-          style={{ padding: "10px 20px", fontSize: "16px" }}
-        >
-          클릭하세요 1
-        </button>
-        <button
-          className="test-btn"
-          style={{ padding: "10px 20px", fontSize: "16px", marginLeft: "10px" }}
-        >
-          클릭하세요 2
-        </button>
-        <p>
-          여기도{" "}
-          <span style={{ cursor: "pointer", textDecoration: "underline" }}>
-            클릭해 보세요
-          </span>
-        </p>
-      </div>
+    <main
+      className="w-full h-[100vh] bg-black/80 flex items-center justify-center"
+      style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}
+    >
+      <button className="text-white px-5 py-3 bg-black rounded-lg cursor-pointer">
+        다운로드
+      </button>
     </main>
   );
 }

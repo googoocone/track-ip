@@ -52,7 +52,9 @@ const Tracker = () => {
         [
           ...prevEvents,
           {
-            timestamp: new Date().toISOString(), // 클릭 발생 시점
+            timestamp: new Date()
+              .toLocaleString("sv-SE", { timeZone: "Asia/Seoul" })
+              .replace(" ", "T"), // YYYY-MM-DDTHH:mm:ss 형식으로 변환
             target_tag: event.target.tagName, // 클릭된 요소의 HTML 태그 (DIV, BUTTON 등)
             target_id: event.target.id || null, // 클릭된 요소의 ID 속성
             target_class: event.target.className || null, // 클릭된 요소의 Class 속성
