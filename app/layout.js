@@ -3,8 +3,8 @@ import "./globals.css";
 import Tracker from "@/components/Tracker"; // Tracker 컴포넌트 임포트
 
 export const metadata = {
-  title: "Next.js Tracking App",
-  description: "Track user visits with Next.js App Router",
+  title: "수아 폭로자료 모음",
+  description: "폭로자료 모음",
 };
 
 export default function RootLayout({ children }) {
